@@ -27,13 +27,22 @@ The files after build process are in web/build directory
 
 ### cmd
 
-For init project (npm)
+For init project
 
+    $ composer install
     $ npm i
 
 For dev
 
-    $ npm run dev
+* launch php server
+
+      $ bin/console server:start
+
+* launch webpack server
+
+      $ npm run dev
+
+* open navigator to localhost:3000
 
 For build
 

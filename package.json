@@ -1,7 +1,7 @@
 {
-  "name": "exemple-webpack-symfony-3",
+  "name": "example-webpack-symfony-3",
   "version": "1.0.0",
-  "description": "compare",
+  "description": "Example Symfony project with webpack 3 builder for CSS and JS",
   "author": "Faramaz Patrick",
   "main": "web/app.php",
   "scripts": {
@@ -12,7 +12,6 @@
     "dev": "rm -rf web/build/ && npm run webpack-dev-server -- --env.env=dev",
     "webpack-dev-server": "webpack-dev-server --hot"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.3",
