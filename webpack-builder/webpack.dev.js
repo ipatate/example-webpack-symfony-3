@@ -4,7 +4,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
   devtool: 'eval-source-map',
   output: {
-    publicPath: '/',
+    publicPath: '/build',
   },
   module: {
     rules: [

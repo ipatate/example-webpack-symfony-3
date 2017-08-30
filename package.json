@@ -8,9 +8,10 @@
     "format":
       "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"assets/js/**/*.{js,jsx}\"",
     "lint": "eslint assets/**/*.{js,jsx} --quiet",
-    "build": "rm -rf web/build/ && node ./node_modules/webpack/bin/webpack.js",
-    "dev": "rm -rf web/build/ && npm run webpack-dev-server -- --env.env=dev",
-    "webpack-dev-server": "webpack-dev-server --hot"
+    "clean": "rm -rf web/build/",
+    "build": "npm run clean && node ./node_modules/webpack/bin/webpack.js",
+    "dev": "npm run clean && npm run webpack-dev-server -- --env.env=dev",
+    "webpack-dev-server": "webpack-dev-server"
   },
   "license": "ISC",
   "devDependencies": {

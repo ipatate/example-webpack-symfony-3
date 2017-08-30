@@ -5,17 +5,13 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        {% if app.environment != 'dev' %}
-         <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+        {% if app.environment == 'prod' %}
+          <link rel="stylesheet" href="{{ asset('build/app.css') }}">
         {% endif %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% if app.environment != 'dev' %}
-          <script src="{{ asset('/build/app.js') }}"></script>
-        {% else %}
-          <script src="{{ asset('/app.js') }}"></script>
-        {% endif %}
+        <script src="{{ asset('/build/app.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
