@@ -5,8 +5,7 @@
   "author": "Faramaz Patrick",
   "main": "web/app.php",
   "scripts": {
-    "format":
-      "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"assets/js/**/*.{js,jsx}\"",
+    "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"assets/js/**/*.{js,jsx}\"",
     "lint": "eslint assets/**/*.{js,jsx} --quiet",
     "clean": "rm -rf web/build/",
     "build": "npm run clean && node ./node_modules/webpack/bin/webpack.js",
@@ -49,5 +48,7 @@
     "webpack-dev-server": "^2.7.1",
     "webpack-merge": "^4.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }

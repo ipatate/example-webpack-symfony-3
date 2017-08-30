@@ -1,3 +1,4 @@
 require('../scss/main.scss');
+const $ = require('jquery');
 
-console.log('Hello World !'); // eslint-disable-line
+$('body').addClass('foo');
