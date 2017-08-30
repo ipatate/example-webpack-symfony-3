@@ -42,7 +42,15 @@ const config = {
       },
     ],
   },
-  plugins: [new webpack.ProgressPlugin()],
+  plugins: [
+    new webpack.ProgressPlugin(),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery',
+      Popper: ['popper.js', 'default'],
+    }),
+  ],
 };
 
 module.exports = config;

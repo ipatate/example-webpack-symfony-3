@@ -2,6 +2,7 @@
 
 webpack-dev-server and browser-sync are use for reload browser on change event for all files in project (js, scss, php or yaml)
 
+## Branch with jQuery and bootstrap !
 
 ### Example use:
 * webpack 3 [https://webpack.js.org/](https://webpack.js.org/)

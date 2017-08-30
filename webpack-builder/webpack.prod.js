@@ -12,7 +12,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ExtractTextWebpackPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader', 'postcss-loader'],
+          use: ['css-loader', 'postcss-loader', 'sass-loader'],
         }),
       },
     ],
