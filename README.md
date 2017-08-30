@@ -42,7 +42,7 @@ For dev
 
       $ npm run dev
 
-* open navigator to localhost:3000
+* open your navigator to localhost:3000
 
 For build
 
