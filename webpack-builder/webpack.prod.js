@@ -20,7 +20,7 @@ module.exports = {
   plugins: [
     new ExtractTextWebpackPlugin('app.css'),
     new UglifyjsWebpackPlugin({
-      sourceMap: true,
+      sourceMap: false,
     }),
     new OptimizeCssAssetsPlugin({
       cssProcessor: require('cssnano'), // eslint-disable-line

@@ -1,8 +1,7 @@
-import 'bootstrap'; // eslint-disable-line
-
+// file with boostrap js component required
+require('./bootstrap');
+// style css for webpack builder
 require('../scss/main.scss');
-
-const $ = require('jquery');
 
 $(() => {
   $('[data-toggle="popover"]').popover();

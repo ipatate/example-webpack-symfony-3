@@ -1,8 +1,6 @@
-## Example Symfony project with webpack 3 builder for CSS and JS
+## Example Symfony project with webpack 3 builder for CSS and JS. Include jQuery and Bootstrap 4.
 
 webpack-dev-server and browser-sync are use for reload browser on change event for all files in project (js, scss, php or yaml)
-
-## Branch with jQuery and bootstrap !
 
 ### Example use:
 * webpack 3 [https://webpack.js.org/](https://webpack.js.org/)
@@ -13,6 +11,10 @@ webpack-dev-server and browser-sync are use for reload browser on change event f
 * esLint [https://eslint.org/](https://eslint.org/) with airbnb config [https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 * prettier [https://github.com/prettier/prettier](https://github.com/prettier/prettier)
 * styleLint [https://github.com/stylelint/stylelint](https://github.com/stylelint/stylelint) with stylelint-config-standard [https://github.com/stylelint/stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) and stylelint-order plugin [https://github.com/hudochenkov/stylelint-order](https://github.com/hudochenkov/stylelint-order)
+
+#### Includes in build
+* Jquery 3
+* Bootstrap 4 beta
 
 ### Webpack
 
@@ -48,3 +50,16 @@ For dev
 For build
 
     $ npm run build
+
+
+### Jquery
+Jquery is global var. No need include module in file.
+### Setting Bootstrap
+
+* Css
+  - For variable customization: file assets/scss/bootstrap_variables
+  - import required bootstrap file in assets/scss/main.scss
+
+* JS
+  - in webpack-builder/webpack.commons.js, uncomment required components in webpack.ProvidePlugin.
+  - in assets/js/bootstrap.js uncomment also required components
